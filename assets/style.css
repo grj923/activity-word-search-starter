@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
+  background: lavender;
 }
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   --default-border: 2px dotted grey;
   --default-margin: 50px;
 }
@@ -27,9 +28,11 @@ main {
 fieldset {
   border: var(--default-border);
   padding: 20px;
+  background: lightgray;
 }
 
 .results-container {
+  background: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,4 +41,16 @@ fieldset {
   font-size: 1em;
   margin: var(--default-margin) 0px;
   border: var(--default-border);
+}
+blockquote {
+  background: lightgray;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+#search-results {
+  color: red;
+  /* background-color: white; */
+  text-emphasis: bold;
+  /* padding: 2px 2px 2px 2px; */
 }

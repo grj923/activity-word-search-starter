@@ -15,10 +15,24 @@ let searchResult = document.querySelector("#search-results");
 searchButton.addEventListener("click", function () {
   console.log(textBox.value);
   console.log(sentence.innerText);
+
+  // let input = (sentence.innerText);
+  // let arrayOfWords = input.split(" ");
+  // let wordCounts = {};
+  // for (i = 0; i < arrayOfWords.length; i++) {
+  // let textBox.value = arrayOfWords[i];
+  // if (!wordCounts[textBox.value]){
+  // wordCounts[textBox.value] = 1;
+  // } else {
+  // wordCounts[textBox.value]++;
+  // }
+  //
+  // }
+
   // if (textBox.value.includes(sentence.innerText)) {
-  if (sentence.innerText.includes(textBox.value)) {
+  if (sentence.innerText.toLowerCase().includes(textBox.value.toLowerCase())) {
     console.log("Found it");
-    searchResult.innerText = "Match";
+    searchResult.innerText = "Match! Good Job!";
   } else {
     searchResult.innerText = "Too Bad!";
   }
